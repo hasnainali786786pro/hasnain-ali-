@@ -109,7 +109,7 @@ const Navbar = ({ darkMode, toggleDarkMode }: { darkMode: boolean, toggleDarkMod
           </div>
           <div className="flex flex-col">
             <span className="font-display font-bold text-xl md:text-2xl tracking-tight leading-none">
-              <span className="text-white">DR. </span>
+              <span className={scrolled ? 'text-gray-900 dark:text-white' : 'text-white'}>DR. </span>
               <span className="text-red-600">SYED ILYAS JAN</span>
             </span>
             <span className="text-[10px] md:text-xs font-bold tracking-[0.3em] font-sans uppercase mt-1 text-red-500">
@@ -891,7 +891,7 @@ export default function App() {
                 animate={{ opacity: 1 }}
                 className="mt-8 font-display font-bold text-xl tracking-widest"
               >
-                <span className="text-white">DR. </span>
+                <span className="text-gray-900 dark:text-white">DR. </span>
                 <span className="text-red-600">ILYAS JAN</span>
               </motion.div>
             </motion.div>
